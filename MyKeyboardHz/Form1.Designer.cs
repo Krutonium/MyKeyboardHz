@@ -57,20 +57,21 @@ namespace MyKeyboardHz
             this.lblScanRate.AutoSize = true;
             this.lblScanRate.Location = new System.Drawing.Point(330, 9);
             this.lblScanRate.Name = "lblScanRate";
-            this.lblScanRate.Size = new System.Drawing.Size(144, 17);
+            this.lblScanRate.Size = new System.Drawing.Size(152, 85);
             this.lblScanRate.TabIndex = 3;
-            this.lblScanRate.Text = "Estimated Scan Rate:";
+            this.lblScanRate.Text = "Estimated Scan Rate:\r\n\r\nAverage Scan Rate:\r\n\r\nAverage Keypress MS:\r\n";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 450);
+            this.ClientSize = new System.Drawing.Size(547, 450);
             this.Controls.Add(this.lblScanRate);
             this.Controls.Add(this.lblResults);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "My Keyboard Hz";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyUp);
             this.ResumeLayout(false);
