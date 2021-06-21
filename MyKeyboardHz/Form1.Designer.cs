@@ -71,7 +71,6 @@ namespace MyKeyboardHz
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "My Keyboard Hz";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyUp);
             this.ResumeLayout(false);
