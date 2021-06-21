@@ -32,7 +32,7 @@ namespace MyKeyboardHz
             if (e.KeyCode == Keys.Enter) { return; }
             endTime = DateTime.Now;
             var time = endTime - startTime;
-            lblResults.Text += Environment.NewLine + time.Milliseconds.ToString();
+            lblResults.Text += Environment.NewLine + time.Milliseconds.ToString() + " : " + e.KeyCode;
             if(time.Milliseconds < shortestPress)
             {
                 shortestPress = time.Milliseconds;
